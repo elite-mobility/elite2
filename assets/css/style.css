@@ -538,9 +538,9 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 /*  2.4 - Form CSS
 /*----------------------------------------*/
 label {
-  display: block;
+  /*display: block;*/
   line-height: 1;
-  margin-bottom: 10px;
+/*  margin-bottom: 10px;*/
   font-weight: 400;
   text-transform: capitalize;
 }
@@ -10621,4 +10621,66 @@ select {
 
 .progress-wrap-3 svg.progress-circle path {
   stroke: #ff5538;
+}
+.form-group {
+  display: flex;
+  justify-content: space-between;
+}
+.form-group label {
+  flex-grow: 1;
+  width: 80px;
+}
+.form-group input {
+  flex-grow: 3;
+}
+@media screen and (max-width: 768px) {
+  .form-group {
+    flex-direction: column;
+  }
+  .form-group label {
+    width: 100%;
+  }
+  .form-group input {
+    width: 100%;
+  }
+}
+.text {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+}
+.num {
+  float: right;
+  font-weight: bold;
+}
+.infot .num {
+  float: none;
+}
+.infot {
+  float: right;
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+.dim,
+.infot .num {
+  width: 55px;
+}
+.form-check {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+}
+.thumbnail {
+  border: 4px solid #f1f1f1;
+  border-radius: 5px;
+  width: 300px;
+  display: block;
+}
+
+.img1 {
+  margin: 15px 0 15px 20px;
+}
+
+.img2 {
+  margin: 15px 0 15px 100px;
 }
